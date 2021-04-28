@@ -317,16 +317,15 @@
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript">
           $(document).ready(function(){
-            $( "#email" ).on("change",function(){
-                    $("#_gotcha").val("");        
-                    grecaptcha.ready(function() {
-                     grecaptcha.execute('6LeFPbMaAAAAAGW2OvAsNdieU3Nj7N4bchhHEP-M', {action: 'submit'}).then(function(token) {
-                         /*console.log( "token \n " + token);*/
-                         $("#_gotcha").val(token);
-                     });
-                    });
-                         
-                })
+            $( "input[name='email']" ).on("change",function(){
+                $("input[name='_gotcha']").val("");        
+                grecaptcha.ready(function() {
+                 grecaptcha.execute('6LeFPbMaAAAAAGW2OvAsNdieU3Nj7N4bchhHEP-M', {action: 'submit'}).then(function(token) {
+                     /*console.log( "token \n " + token);*/
+                     $("input[name='_gotcha']").val(token);
+                 });
+                });      
+            });
              
             });
         </script>
