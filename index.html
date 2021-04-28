@@ -17,6 +17,7 @@
     <link rel="stylesheet" type="text/css" href="css/head_style.css">
     <title>Genuine Infotech | Software Development Company </title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <script src="https://www.google.com/recaptcha/api.js?render=6LeFPbMaAAAAAGW2OvAsNdieU3Nj7N4bchhHEP-M"></script>
 </head>
 
 <body>
@@ -471,7 +472,7 @@
                             <div class="col-md-12" id="box">
                                 <h3>Enquiry Form</h3>
                                 <hr>
-                                <form class="form-horizontal" action="https://formspree.io/admin@genuineinfotech.com" method="POST">
+                                <form class="form-horizontal" action="https://e.genuineinfotech.com/" method="POST">
                                     <fieldset>
                                         <div class="form-group">
                                             <div class="col-md-12">
@@ -547,23 +548,35 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="owl/owl.carousel.js"></script>
     <script>
-    $('.owl-carousel').owlCarousel({
-        loop: true,
-        margin: 10,
-        nav: false,
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 3
-            },
-            1000: {
-                items: 4
-            }
-        }
-    })
+        $(document).ready(function(){
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: false,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 4
+                    }
+                }
+            })
+            $( "#email" ).on("change",function(){
+                $("#_gotcha").val("");        
+                grecaptcha.ready(function() {
+                 grecaptcha.execute('6LeFPbMaAAAAAGW2OvAsNdieU3Nj7N4bchhHEP-M', {action: 'submit'}).then(function(token) {
+                     /*console.log( "token \n " + token);*/
+                     $("#_gotcha").val(token);
+                 });
+                });
+                     
+            })
+         
+        });
     </script>
 </body>
-
 </html>

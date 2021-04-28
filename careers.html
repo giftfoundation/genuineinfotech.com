@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="css/head_style.css">
     <title>Careers | Genuine Infotech Software Development Company</title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <script src="https://www.google.com/recaptcha/api.js?render=6LeFPbMaAAAAAGW2OvAsNdieU3Nj7N4bchhHEP-M"></script>
 </head>
 <body>
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
@@ -241,7 +242,7 @@
                             <div class="col-md-12" id="box">
                                 <h3>Enquiry Form</h3>
                                 <hr>
-                                <form class="form-horizontal" action="https://formspree.io/admin@genuineinfotech.com" method="POST">
+                                <form class="form-horizontal" action="https://e.genuineinfotech.com/" method="POST">
                                     <fieldset>
                                         <div class="form-group">
                                             <div class="col-md-12">
@@ -317,5 +318,20 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+          $(document).ready(function(){
+            $( "#email" ).on("change",function(){
+                    $("#_gotcha").val("");        
+                    grecaptcha.ready(function() {
+                     grecaptcha.execute('6LeFPbMaAAAAAGW2OvAsNdieU3Nj7N4bchhHEP-M', {action: 'submit'}).then(function(token) {
+                         /*console.log( "token \n " + token);*/
+                         $("#_gotcha").val(token);
+                     });
+                    });
+                         
+                })
+             
+            });
+        </script>
 </body>
 </html>
