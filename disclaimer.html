@@ -13,7 +13,6 @@
     <link rel="stylesheet" type="text/css" href="css/head_style.css">
     <title>disclaimer | Genuine Infotech Software Development Company</title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-    <script src="https://www.google.com/recaptcha/api.js?render=6Leew_4aAAAAAOyhbCJaNfBmDfkQOeGgiUfK1NVf"></script>
 </head>
 <body>
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
@@ -69,12 +68,6 @@
                 <div class="col-md-4 col-sm-6 footer-text">
                     <h4>About <span>&nbsp;us</span></h4>
                     <p>Genuine Infotech Private Limited - GIFT is an emerging ITES [ Information Technology Enabled Service ] Company in South India since 1995, which has technology and process oriented approach as the foundation of all our service offerings. Some of our key domain industries includes financial services, ecommerce, portals, Schools, Flour Mills, traders and complete Web technology works.</p>
-                    <ul class="social-links margin-t-35">
-                        <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//www.genuineinfotech.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="https://twitter.com/intent/tweet?text=http%3A//www.genuineinfotech.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <li><a href="mailto:admin@genuineinfotech.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
-                        <li><a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A//www.genuineinfotech.com/&title=&summary=&source="><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                    </ul>
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <h4>Contact us</h4>
@@ -86,19 +79,26 @@
                                 Coimbatore - 641002,<br/>
                                 Tamil Nadu, India.</p>
                         </li>
-                        <li> <i class="fa fa-phone" aria-hidden="true"></i> +91 422 4372678 </li>
-                        <li> <i class="fa fa-mobile fa-3x" aria-hidden="true"></i> +91 422 2446043</li>
-                        <li> <i class="fa fa-envelope-o" aria-hidden="true"></i> admin@genuineinfotech.com </li> 
-                        <li> <i class="fa fa-globe text-16 txt-custom" aria-hidden="true"></i>www.genuineinfotech.com </li>
+                        <li class="text-center"><button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">Enquiry Form</button></li>
                     </ul>
+                    
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div class="container-fluid">
                         <div class="row-fluid">
-                            <div class="col-md-12" id="box">
-                                <h3>Enquiry Form</h3>
-                                <hr>
-                                <form class="form-horizontal" action="https://e.genuineinfotech.com/" method="POST">
+                            <div class="col-md-12">
+                                <h4>Connect us</h4>
+                                <ul class="list-unstyled">
+                                    <li> <i class="fa fa-phone" aria-hidden="true"></i> +91 422 4372678 / 2446043</li>
+                                    <li> <i class="fa fa-envelope-o" aria-hidden="true"></i> admin@genuineinfotech.com </li> 
+                                </ul>
+                                <ul class="social-links mt-3 text-center">
+                                    <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//www.genuineinfotech.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="https://twitter.com/intent/tweet?text=http%3A//www.genuineinfotech.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                    <li><a href="mailto:admin@genuineinfotech.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A//www.genuineinfotech.com/&title=&summary=&source="><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                </ul>
+                                <!--form class="form-horizontal" action="" method="POST">
                                     <fieldset>
                                         <div class="form-group">
                                             <div class="col-md-12">
@@ -142,12 +142,12 @@
                                         </div>
                                         <div class="form-group">
                                             <div class="col-md-12">
-                                                <input type="text" name="_gotcha" style="display:none" />
+                                                <input type="text" id="_gotcha" name="_gotcha" style="display:none" />
                                                 <button type="submit" class="btn btn-warning pull-right" name="submit">Submit <i class="fa fa-send"></i></button>
                                             </div>
                                         </div>
                                     </fieldset>
-                                </form>
+                                </form-->
                             </div>
                         </div>
                     </div>
@@ -167,24 +167,25 @@
             </div>
         </div>
     </footer>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-md modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">.</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body p-0">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf1QKT0u3O6GZmjta0yonVd0XM8kGm9gRDyRv-fttn6dKmU2A/viewform?embedded=true" width="100%" height="947" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            </div>
+          </div>
+        </div>
+    </div>
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="js/bootstrap.min.js"></script>
-        <script type="text/javascript">
-          $(document).ready(function(){
-            $( "input[name='email']" ).on("change",function(){
-                $("input[name='_gotcha']").val("");        
-                grecaptcha.ready(function() {
-                 grecaptcha.execute('6Leew_4aAAAAAOyhbCJaNfBmDfkQOeGgiUfK1NVf', {action: 'submit'}).then(function(token) {
-                     /*console.log( "token \n " + token);*/
-                     $("input[name='_gotcha']").val(token);
-                 });
-                });      
-            });
-             
-         });
-        </script>
 </body>
 </html>
